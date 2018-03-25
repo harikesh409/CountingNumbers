@@ -204,6 +204,7 @@ function resetSticks() {
 function stopanim() {
     for(var i=0;i<9;i++) {
         PIEremoveElement(stick[i]);
+        PIEremoveElement(stickNum[i]);
     }
     for(var i=0;i<5;i++) {
         PIEremoveElement(bundle[i]);
@@ -215,10 +216,11 @@ function stopanim() {
 
 function resetExperiment()
 {
-    console.log("reset");
+    // console.log("reset");
     scalar = 0.3;
     for(var i=0;i<9;i++) {
         PIEremoveElement(stick[i]);
+        PIEremoveElement(stickNum[i]);
     }
     for(var i=0;i<5;i++) {
         PIEremoveElement(bundle[i]);
