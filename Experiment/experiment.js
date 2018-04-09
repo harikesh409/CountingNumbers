@@ -412,6 +412,7 @@ function stopanim() {
     PIEstopAnimation();
     for(var i=0;i<9;i++) {
         PIEremoveElement(stick[i]);
+        PIEremoveElement(stickNum[i]);
     }
     for(var i=0;i<5;i++) {
         PIEremoveElement(bundle[i]);
@@ -423,10 +424,14 @@ function stopanim() {
 function resetExperiment()
 {
     // console.log("reset");
+<<<<<<< HEAD:Experiment/experiment.js
     PIEstopAnimation();
+=======
+>>>>>>> ef243b16ed3949a0ef68a5d133854a1e37e52360:coutingNumbers/exp.js
     scalar = 0.3;
     for(var i=0;i<9;i++) {
         PIEremoveElement(stick[i]);
+        PIEremoveElement(stickNum[i]);
     }
     for(var i=0;i<5;i++) {
         PIEremoveElement(bundle[i]);
